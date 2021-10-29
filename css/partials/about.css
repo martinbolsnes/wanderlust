@@ -1,9 +1,9 @@
 main {
   display: grid;
   grid-template-areas:
-    'aboutUs__heading'
-    'aboutUs__text--container'
-    'aboutUs__img--container';
+    "aboutUs__heading"
+    "aboutUs__text--container"
+    "aboutUs__img--container";
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,11 +12,11 @@ main {
 
 .aboutUs__heading {
   margin-left: 0;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
 .aboutUs__text--container {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,7 +33,7 @@ main {
 
 .aboutUs__img--container,
 .modal01 {
-  background-image: url(../img/annie-spratt-qyAka7W5uMY-unsplash-compressed.jpg);
+  background-image: url(/img/annie-spratt-qyAka7W5uMY-unsplash-compressed.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

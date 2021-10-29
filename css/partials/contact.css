@@ -1,8 +1,8 @@
 main {
   display: grid;
   grid-template-areas:
-    'contact__heading contact__heading'
-    'contactForm__section contactImg__container';
+    "contact__heading contact__heading"
+    "contactForm__section contactImg__container";
   display: flex;
   flex-direction: column;
 }
@@ -36,7 +36,7 @@ main {
 }
 
 label {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 input {
@@ -67,7 +67,7 @@ textarea {
 #submitBtn {
   width: 155px;
   height: 45px;
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   font-size: 1.3rem;
   background-color: var(--mainBlack);
   color: var(--white);
@@ -104,7 +104,7 @@ textarea {
 .contactImg__container,
 .modal02 {
   grid-area: contactImg__container;
-  background-image: url(../img/mathyas-kurmann-fb7yNPbT0l8-unsplash-compressed.jpg);
+  background-image: url(/img/mathyas-kurmann-fb7yNPbT0l8-unsplash-compressed.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -139,9 +139,9 @@ textarea {
   main {
     display: grid;
     grid-template-areas:
-      'contact__heading'
-      'contactImg__container'
-      'contactForm__section';
+      "contact__heading"
+      "contactImg__container"
+      "contactForm__section";
     display: flex;
     flex-direction: column;
   }
