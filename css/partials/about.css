@@ -1,0 +1,145 @@
+main {
+  display: grid;
+  grid-template-areas:
+    'aboutUs__heading'
+    'aboutUs__text--container'
+    'aboutUs__img--container';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutUs__heading {
+  margin-left: 0;
+  font-family: 'Jost', sans-serif;
+}
+
+.aboutUs__text--container {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.aboutUs__text {
+  width: 70%;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  color: var(--mainBlack);
+}
+
+.aboutUs__img--container,
+.modal01 {
+  background-image: url(../img/annie-spratt-qyAka7W5uMY-unsplash-compressed.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.aboutUs__img--container {
+  width: 60%;
+  height: 350px;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  -webkit-box-shadow: 0 0 5px var(--secondaryBlack);
+  box-shadow: 0 0 5px var(--secondaryBlack);
+}
+
+#imgToClick {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#imgToClick:hover {
+  opacity: 0.7;
+}
+
+.modal01 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  margin: auto;
+  width: 85%;
+  height: 75%;
+  overflow: auto;
+  -webkit-box-shadow: 0 0 150px var(--secondaryBlack);
+  box-shadow: 0 0 150px var(--secondaryBlack);
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.4s;
+  animation-name: zoom;
+  animation-duration: 0.4s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: var(--dandelion);
+  text-shadow: 0.5px 0.5px var(--mainBlack);
+  font-size: 3rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .aboutUs__img--container {
+    width: 70%;
+  }
+
+  .modal01 {
+    height: 40%;
+  }
+}
+
+@media (max-width: 769px) {
+  .modal01 {
+    height: 35%;
+  }
+}
+
+@media (max-width: 500px) {
+  .aboutUs__text {
+    width: 85%;
+  }
+
+  .aboutUs__img--container {
+    width: 95%;
+    height: 200px;
+  }
+
+  .modal01 {
+    height: 35%;
+    width: 95%;
+    margin-bottom: 400px;
+  }
+}
