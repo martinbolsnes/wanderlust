@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Jost:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Jost:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap");
 
 body {
   margin: 0;
@@ -59,12 +59,13 @@ body {
 }
 
 .wpContent {
-  width: 100%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .wp-block-image,
@@ -72,60 +73,6 @@ figure {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.wp-image-206,
-.wp-image-207,
-.wp-image-209,
-.wp-image-199,
-.wp-image-200,
-.wp-image-202,
-.wp-image-193,
-.wp-image-192,
-.wp-image-195,
-.wp-image-184,
-.wp-image-185,
-.wp-image-187,
-.wp-image-178,
-.wp-image-177,
-.wp-image-180,
-.wp-image-171,
-.wp-image-170,
-.wp-image-173,
-.wp-image-163,
-.wp-image-164,
-.wp-image-166,
-.wp-image-157,
-.wp-image-156,
-.wp-image-159,
-.wp-image-150,
-.wp-image-149,
-.wp-image-152,
-.wp-image-143,
-.wp-image-142,
-.wp-image-145,
-.wp-image-136,
-.wp-image-135,
-.wp-image-138,
-.wp-image-129,
-.wp-image-128,
-.wp-image-131,
-.wp-image-122,
-.wp-image-121,
-.wp-image-124,
-.wp-image-114,
-.wp-image-115,
-.wp-image-116,
-.wp-image-106,
-.wp-image-105,
-.wp-image-108 {
-  width: 70%;
-  height: 450px;
-  -webkit-box-shadow: 0 0 5px var(--secondaryBlack);
-  box-shadow: 0 0 5px var(--secondaryBlack);
-  border-radius: 20px;
-  border: solid 2px var(--mainBlack);
-  margin-bottom: 20px;
 }
 
 .has-text-align-left {
@@ -141,52 +88,7 @@ figure {
     margin-bottom: 20px;
   }
 
-  .blogHero,
-  .wp-image-206,
-  .wp-image-207,
-  .wp-image-209,
-  .wp-image-199,
-  .wp-image-200,
-  .wp-image-202,
-  .wp-image-193,
-  .wp-image-192,
-  .wp-image-195,
-  .wp-image-184,
-  .wp-image-185,
-  .wp-image-187,
-  .wp-image-178,
-  .wp-image-177,
-  .wp-image-180,
-  .wp-image-171,
-  .wp-image-170,
-  .wp-image-173,
-  .wp-image-163,
-  .wp-image-164,
-  .wp-image-166,
-  .wp-image-157,
-  .wp-image-156,
-  .wp-image-159,
-  .wp-image-150,
-  .wp-image-149,
-  .wp-image-152,
-  .wp-image-143,
-  .wp-image-142,
-  .wp-image-145,
-  .wp-image-136,
-  .wp-image-135,
-  .wp-image-138,
-  .wp-image-129,
-  .wp-image-128,
-  .wp-image-131,
-  .wp-image-122,
-  .wp-image-121,
-  .wp-image-124,
-  .wp-image-114,
-  .wp-image-115,
-  .wp-image-116,
-  .wp-image-106,
-  .wp-image-105,
-  .wp-image-108 {
+  .blogHero {
     width: 80%;
     height: 400px;
   }
@@ -206,52 +108,7 @@ figure {
     margin-bottom: 0px;
   }
 
-  .blogHero,
-  .wp-image-206,
-  .wp-image-207,
-  .wp-image-209,
-  .wp-image-199,
-  .wp-image-200,
-  .wp-image-202,
-  .wp-image-193,
-  .wp-image-192,
-  .wp-image-195,
-  .wp-image-184,
-  .wp-image-185,
-  .wp-image-187,
-  .wp-image-178,
-  .wp-image-177,
-  .wp-image-180,
-  .wp-image-171,
-  .wp-image-170,
-  .wp-image-173,
-  .wp-image-163,
-  .wp-image-164,
-  .wp-image-166,
-  .wp-image-157,
-  .wp-image-156,
-  .wp-image-159,
-  .wp-image-150,
-  .wp-image-149,
-  .wp-image-152,
-  .wp-image-143,
-  .wp-image-142,
-  .wp-image-145,
-  .wp-image-136,
-  .wp-image-135,
-  .wp-image-138,
-  .wp-image-129,
-  .wp-image-128,
-  .wp-image-131,
-  .wp-image-122,
-  .wp-image-121,
-  .wp-image-124,
-  .wp-image-114,
-  .wp-image-115,
-  .wp-image-116,
-  .wp-image-106,
-  .wp-image-105,
-  .wp-image-108 {
+  .blogHero {
     width: 80%;
     height: 300px;
   }
@@ -270,52 +127,7 @@ figure {
     margin-bottom: 0px;
   }
 
-  .blogHero,
-  .wp-image-206,
-  .wp-image-207,
-  .wp-image-209,
-  .wp-image-199,
-  .wp-image-200,
-  .wp-image-202,
-  .wp-image-193,
-  .wp-image-192,
-  .wp-image-195,
-  .wp-image-184,
-  .wp-image-185,
-  .wp-image-187,
-  .wp-image-178,
-  .wp-image-177,
-  .wp-image-180,
-  .wp-image-171,
-  .wp-image-170,
-  .wp-image-173,
-  .wp-image-163,
-  .wp-image-164,
-  .wp-image-166,
-  .wp-image-157,
-  .wp-image-156,
-  .wp-image-159,
-  .wp-image-150,
-  .wp-image-149,
-  .wp-image-152,
-  .wp-image-143,
-  .wp-image-142,
-  .wp-image-145,
-  .wp-image-136,
-  .wp-image-135,
-  .wp-image-138,
-  .wp-image-129,
-  .wp-image-128,
-  .wp-image-131,
-  .wp-image-122,
-  .wp-image-121,
-  .wp-image-124,
-  .wp-image-114,
-  .wp-image-115,
-  .wp-image-116,
-  .wp-image-106,
-  .wp-image-105,
-  .wp-image-108 {
+  .blogHero {
     width: 90%;
     height: 200px;
   }

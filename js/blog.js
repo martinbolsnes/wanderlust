@@ -1,32 +1,30 @@
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
-const id = params.get('id');
+const id = params.get("id");
 
 async function getPosts(postId) {
   try {
     const response = await fetch(
-      'https://api.martinbols.tech/wp-json/wp/v2/posts/' + postId + '?_embed'
+      "https://wanderlust-api-123.herokuapp.com/blogposts/" + postId
     );
     const jsonResults = await response.json();
     const postsArray = jsonResults;
     console.log(postsArray);
 
-    document.title = postsArray.title.rendered + ' - Wanderlust';
+    document.title = postsArray.title + " - Wanderlust";
+
+    document.querySelector(".blog__heading").innerHTML = `${postsArray.title}`;
+
+    document.querySelector(".blogHero").style.backgroundImage = `
+    url('${postsArray.image_url}')`;
 
     document.querySelector(
-      '.blog__heading'
-    ).innerHTML = `${postsArray.title.rendered}`;
-
-    document.querySelector('.blogHero').style.backgroundImage = `
-    url('${postsArray._embedded['wp:featuredmedia'][0].media_details.sizes.full.source_url}')`;
+      ".modal03"
+    ).style.backgroundImage = `url('${postsArray.image_url}')`;
 
     document.querySelector(
-      '.modal03'
-    ).style.backgroundImage = `url('${postsArray._embedded['wp:featuredmedia'][0].media_details.sizes.full.source_url}')`;
-
-    document.querySelector(
-      '.wpContent'
-    ).innerHTML = `${postsArray.content.rendered}`;
+      ".wpContent-text"
+    ).innerHTML = `${postsArray.description}`;
   } catch {
     /* document.querySelector('.alert').innerHTML = showAlertTouser(
       'An error occured (Cannot load content)',
