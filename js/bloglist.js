@@ -7,7 +7,7 @@ async function getPosts(postsUrl) {
     const postsResults = jsonFromServer;
     console.log(postsResults);
 
-    document.querySelector(".loading").classList.add("hide");
+    //document.querySelector(".loading").classList.add("hide");
 
     for (let i = 0; i < postsResults.length; i++) {
       document.querySelector(".blogList__section").innerHTML += `
@@ -41,11 +41,11 @@ const viewMoreDiv = document.querySelector(".viewMoreDiv");
 
 viewMoreBtn.onclick = function () {
   getPosts(postsUrl + "&page=2");
-  viewMoreDiv.innerHTML = ` <div class="loading">
+  /* viewMoreDiv.innerHTML = ` <div class="loading">
   <img
       src="https://flevix.com/wp-content/uploads/2019/07/Ajax-Preloader.gif"
       alt="Loading Gif"/>
-</div>`;
+</div>`; */
   setTimeout(function () {
     viewMoreDiv.innerHTML = ``;
   }, 1000);
